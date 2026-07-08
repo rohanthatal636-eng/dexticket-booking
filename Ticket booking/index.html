@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M Ticket Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <div class="logo">
+    🎫
+</div>
+
+<h1>
+    M Ticket Booking
+</h1>
+
+<p class="tagline">
+    Choose your slot and book instantly
+</p>
+
+    <p>Select your slot and confirm booking</p>
+
+
+
+    <input 
+        type="text" 
+        id="username" 
+        placeholder="Enter your name"
+    >
+
+
+
+    <div class="stats">
+
+
+        <div class="stat-card">
+
+            <h3>🟢 Available</h3>
+
+            <span id="availableCount">
+                22
+            </span>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <h3>🟨 Booked</h3>
+
+            <span id="bookedCount">
+                0
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div id="ticketContainer" class="tickets"></div>
+
+
+
+
+
+    <!-- Booking Confirmation -->
+
+
+    <div id="confirmation" style="display:none;">
+
+    <h2>
+        🎉 Booking Confirmed
+    </h2>
+
+
+    <p id="confirmName"></p>
+
+    <p id="confirmTicket"></p>
+
+    <p id="confirmDate"></p>
+
+    <p id="confirmTime"></p>
+
+
+    <button id="printReceipt">
+        🖨️ Print Receipt
+    </button>
+
+
+</div>
+
+    </div>
+
+
+
+
+
+    <!-- Popup -->
+
+
+    <div id="bookingPopup" class="popup">
+
+
+        <div class="popup-content">
+
+
+            <h2>
+                🎫 Confirm Booking
+            </h2>
+
+
+            <p id="popupName"></p>
+
+
+            <p id="popupTicket"></p>
+
+
+
+            <div class="popup-buttons">
+
+
+                <button id="cancelBooking">
+                    ❌ Cancel
+                </button>
+
+
+                <button id="confirmBooking">
+                    ✅ Confirm
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+<script type="module" src="script.js"></script>
+
+
+</body>
+
+</html>

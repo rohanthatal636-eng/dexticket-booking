@@ -1,0 +1,412 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#eff6ff,#2563eb);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+
+
+.container{
+
+    width:100%;
+
+    max-width:900px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+
+    text-align:center;
+
+}
+
+
+
+h1{
+
+    color:#1e3a8a;
+
+    margin-bottom:10px;
+
+}
+
+
+
+p{
+
+    color:#555;
+
+    margin:10px;
+
+}
+
+
+
+
+input{
+
+    width:100%;
+
+    max-width:350px;
+
+    padding:15px;
+
+    border:2px solid #2563eb;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    outline:none;
+
+    margin:20px;
+
+}
+
+
+
+
+/* Stats */
+
+
+.stats{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin:20px;
+
+}
+
+
+
+.stat-card{
+
+    background:#f8fafc;
+
+    border:2px solid #2563eb;
+
+    padding:15px 30px;
+
+    border-radius:15px;
+
+}
+
+
+
+.stat-card h3{
+
+    color:#2563eb;
+
+}
+
+
+
+.stat-card span{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* Tickets */
+
+
+.tickets{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+
+
+.ticket{
+
+    padding:25px 10px;
+
+    border-radius:15px;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.available{
+
+    background:#16a34a;
+
+}
+
+
+
+.available:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.booked{
+
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+
+    cursor:not-allowed;
+
+}
+
+
+
+
+
+/* Confirmation */
+
+
+#confirmation{
+
+    margin-top:25px;
+
+    background:#fff7ed;
+
+    border:3px solid #f59e0b;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    color:#92400e;
+
+}
+
+
+
+
+
+/* Popup */
+
+
+.popup{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.6);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+
+
+.popup-content{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    width:90%;
+
+    max-width:400px;
+
+}
+
+
+
+.popup-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+
+button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .container{
+
+        padding:20px;
+
+    }
+
+
+}/* Logo Style */
+
+.logo{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+.tagline{
+
+    color:#64748b;
+
+    font-size:18px;
+
+}/* Admin Dashboard Logo */
+
+.admin-logo{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+/* Admin Section */
+
+#adminArea{
+
+    margin-top:30px;
+
+}
+
+
+#bookingList div{
+
+    background:#f8fafc;
+
+    border-left:5px solid #2563eb;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    margin:12px 0;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
